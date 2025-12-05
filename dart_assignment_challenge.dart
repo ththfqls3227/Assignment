@@ -27,7 +27,6 @@ void main(){
   Set<int> intersection = myNumber.intersection(lottoNum);
   
   //맞춘 번호도 확인할 수 있게 기능 추가
-  //int correctNum = intersection.length ;
   if (intersection.length >= 5) {
     print("당첨 여부: [1등]! 맞춘 번호: ${intersection.toList()}");
     } 
@@ -37,7 +36,7 @@ void main(){
       else if (intersection.length >= 3) {
         print ("당첨 여부: [3등]! 맞춘 번호: ${intersection.toList()}");
         }
-        //1개 ~ 2개 번호 맞춘경우 맞춘 번호 표시
+        //1개 ~ 2개 맞춘 경우 당첨 실패지만 맞춘 번호 표시
         else if (intersection.length >= 1) {
           print ("당첨 여부: 당첨 실패! 맞춘 번호: ${intersection.toList()}");
           }        
